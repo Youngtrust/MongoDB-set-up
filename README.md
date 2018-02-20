@@ -19,3 +19,5 @@ Start server:
 </code>
 
 Next time,go to the "dir" using <code>mongo</code> to run DB
+
+<img src = "Mongo.png"><img>
