@@ -21,3 +21,26 @@ Start server:
 Next time,go to the "dir" using <code>mongo</code> to run DB
 
 <img src = "Mongo.png"><img>
+
+
+Check dbs : <code>show dbs</code>
+Create dbs: <code>use <bd name></code>
+Create new users in db:
+<code>
+  {
+  user: "<name>",
+  pwd: "<cleartext password>",
+  customData: { <any information> },
+  roles: [
+    { role: "<role>", db: "<database>" } | "<role>",
+    ...
+  ],
+  authenticationRestrictions: [
+     {
+       clientSource: ["<IP>" | "<CIDR range>", ...]
+       serverAddress: ["<IP>" | "<CIDR range>", ...]
+     },
+     ...
+  ]
+}
+</code>
